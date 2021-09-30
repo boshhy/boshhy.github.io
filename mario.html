@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>CS50: boshhy</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script>
+           function listen()
+            {
+                let blocka = document.querySelector(".one");
+                let blockb = document.querySelector(".two");
+                let blockc = document.querySelector(".three");
+                let blockd = document.querySelector(".four");
+                let blocke = document.querySelector(".five");
+                let blockf = document.querySelector(".six");
+                let blockg = document.querySelector(".seven");
+                let blockh = document.querySelector(".eight");
+
+                function reset(){
+                    seth("0px");
+                }
+
+                function seta(myWidth){
+                    document.querySelector("#block_a").src="images/block.png";
+                    document.querySelector("#block_a").style.width= myWidth;
+                }
+
+                function setb(myWidth)
+                {
+                    seta(myWidth);
+                    let b = document.querySelectorAll(".block_b");
+                    for (let i = 0; i < b.length; i++)
+                    {
+                        b[i].src="images/block.png";
+                        b[i].style.width=myWidth;
+                    };
+                }
+
+                function setc(myWidth)
+                {
+                    setb(myWidth);
+                    let c = document.querySelectorAll(".block_c");
+                    for (let i = 0; i < c.length; i++)
+                    {
+                        c[i].src="images/block.png";
+                        c[i].style.width=myWidth;
+                    };
+                }
+
+                function setd(myWidth)
+                {
+                    setc(myWidth);
+                    let d = document.querySelectorAll(".block_d");
+                    for (let i = 0; i < d.length; i++)
+                    {
+                        d[i].src="images/block.png";
+                        d[i].style.width=myWidth;
+                    };
+                }
+
+                function sete(myWidth)
+                {
+                    setd(myWidth);
+                    let e = document.querySelectorAll(".block_e");
+                    for (let i = 0; i < e.length; i++)
+                    {
+                        e[i].src="images/block.png";
+                        e[i].style.width=myWidth;
+                    };
+                }
+
+                function setf(myWidth)
+                {
+                    sete(myWidth);
+                    let f = document.querySelectorAll(".block_f");
+                    for (let i = 0; i < f.length; i++)
+                    {
+                        f[i].src="images/block.png";
+                        f[i].style.width=myWidth;
+                    };
+                }
+
+                function setg(myWidth)
+                {
+                    setf(myWidth);
+                    let g = document.querySelectorAll(".block_g");
+                    for (let i = 0; i < g.length; i++)
+                    {
+                        g[i].src="images/block.png";
+                        g[i].style.width=myWidth;
+                    };
+                }
+
+                function seth(myWidth)
+                {
+                    setg(myWidth);
+                    let h = document.querySelectorAll(".block_h");
+                    for (let i = 0; i < h.length; i++)
+                    {
+                        h[i].src="images/block.png";
+                        h[i].style.width=myWidth;
+                    };
+                }
+
+                /*let blocka = document.querySelector(".1");*/
+                blocka.addEventListener("click", function()
+                {
+                    reset();
+                    seta("300px");
+
+                });
+
+                blockb.addEventListener("click", function()
+                {
+                    reset();
+                    setb("150px");
+                });
+
+                blockc.addEventListener("click", function()
+                {
+                    reset();
+                    setc("100px");
+                });
+
+                blockd.addEventListener("click", function()
+                {
+                    reset();
+                    setd("75px");
+                });
+
+                blocke.addEventListener("click", function()
+                {
+                    reset();
+                    sete("60px");
+                });
+
+                blockf.addEventListener("click", function()
+                {
+                    reset();
+                    setf("50px");
+                });
+
+                blockg.addEventListener("click", function()
+                {
+                    reset();
+                    setg("42.8571428571px");
+                });
+
+                blockh.addEventListener("click", function()
+                {
+                    seth("37.5px");
+                });
+            }
+
+            document.addEventListener("DOMContentLoaded", listen);
+
+        </script>
+    </head>
+  <body class="background_styles">
+        <p class="p_styles"><kbd>"Hello, Mario!"</kbd></p>
+        <div class ="header">
+            <div class ="banner">
+                <a class="a_styles" href="index.html">Home</a>
+                <a class="a_styles" href="about.html">About Me</a>
+                <a class="a_styles" href="bubbles.html">Bubbles</a>
+                <a class="a_styles" href="mario.html"><u>Mario</u></a>
+            </div>
+        </div>
+        <div style="color: white; width:100%; text-align: center;">
+                <br><kbd>lab1: Mario</kbd>
+        </div>
+
+        <div class="myfooter middle">
+                <button class="one mybutton">1</button>
+                <button class="two mybutton">2</button>
+                <button class="three mybutton">3</button>
+                <button class="four mybutton">4</button>
+                <button class="five mybutton">5</button>
+                <button class="six mybutton">6</button>
+                <button class="seven mybutton">7</button>
+                <button class="eight mybutton">8</button>
+        </div>
+
+        <div class="middle">
+            <img id="block_a" src=""/><br>
+            <img class="block_b" src=""/><img class="block_b" src=""/><br>
+            <img class="block_c" src=""/><img class="block_c" src=""/><img class="block_c" src=""/><br>
+            <img class="block_d" src=""/><img class="block_d" src=""/><img class="block_d" src=""/><img class="block_d" src=""/><br>
+            <img class="block_e" src=""/><img class="block_e" src=""/><img class="block_e" src=""/><img class="block_e" src=""/><img class="block_e" src=""/><br>
+            <img class="block_f" src=""/><img class="block_f" src=""/><img class="block_f" src=""/><img class="block_f" src=""/><img class="block_f" src=""/><img class="block_f" src=""/><br>
+            <img class="block_g" src=""/><img class="block_g" src=""/><img class="block_g" src=""/><img class="block_g" src=""/><img class="block_g" src=""/><img class="block_g" src=""/><img class="block_g" src=""/><br>
+            <img class="block_h" src=""/><img class="block_h" src=""/><img class="block_h" src=""/><img class="block_h" src=""/><img class="block_h" src=""/><img class="block_h" src=""/><img class="block_h" src=""/><img class="block_h" src=""/><br>
+        </div>
+    </body>
+</html>

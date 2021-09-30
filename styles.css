@@ -1,0 +1,76 @@
+/*-----------This pages color came from: https://colorpalettes.net/color-palette-2208/  ----------------*/
+.background_styles {
+    background-color: #293249;
+}
+
+.example::-webkit-scrollbar {
+  display: none;
+}
+
+.p_styles {
+    color: #aca1a1;
+    text-align: center;
+    font-size: 40px;
+}
+
+.a_styles {
+    text-align: center;
+    color: #ffffff;
+}
+
+.header {
+    text-align: center;
+    background-color: #69656f;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+.banner {
+  margin: auto;
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.middle {
+    text-align: center;
+    position: absolute;
+    top: 170px;
+    width: 100%;
+}
+
+.myfooter {
+    position: relative;
+    top: 335px;
+    width: 100%;
+    z-index:3;
+}
+
+.mybutton {
+  background-color: #aca1a1;
+  border: none;
+  color: #f7efed;
+  padding: 11px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 21px;
+  margin: 4px 0px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.fonttext {
+    font-size: 16px;
+}
+
+.namecenter {
+    text-align: center;
+    width: 100%;
+}
