@@ -875,4 +875,4 @@ scene("start", (levelIndex) => {
     })
 });
 
-go("start", 7)
+go("start", 0)
